@@ -1865,7 +1865,7 @@ while True:
             # 更多信息
             elif 230 < x < 300 and 0 < y <= 20:
                 import webbrowser
-                webbrowser.open("https://www.github.com")
+                webbrowser.open("https://github.com/Ling-Nine/DuPi-calculator")
             # 主窗口
             elif 1 < x < size[0] - 5 and 20 < y < 223 + add_height:
                 ipl = 0
