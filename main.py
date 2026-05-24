@@ -1884,7 +1884,8 @@ while True:
                     if abs(I.coordinate[0][-1]+I.result[1][-1]-x)+abs(I.coordinate[1][-1]+I.result[3][i]//2-y)< \
                             abs(I.coordinate[0][cplace]+I.result[1][cplace]//2-x)+abs(I.coordinate[1][cplace]+I.result[3][cplace]//2-y):
                         cplace = len(I.coordinate[0])
-                if (I.result[0][cplace+1] == "^√}"):cplace-=1;
+                if (cplace < len(I.result[0])):
+                    if (I.result[0][cplace-1] == "^√}"):cplace-=1;
                 I.cursor_change(cplace)
 
             Bn.click(Bn.click_place)
