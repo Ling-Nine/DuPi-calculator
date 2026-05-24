@@ -974,10 +974,10 @@ if __name__ == "__main__":
 
         r"x^2 - 4 = 0",  # 方程求解
         r"x^3 - 2x^2 + x = 0",  # 求解命令
-        r"\sum_{n=1}^{\infty} \frac{1}{n^2}",  # 级数求和
+        r"\sum _{n=1}^{\infty} \frac{1}{n^{2}}",  # 级数求和
         r'\sum ^{6}_{n=0}\frac{x^{n}}{n!}',
         r'\sum ^{2}_{i=1}\sum ^{2}_{j=1}\left(i+j\right)',
-        r'\lim_{x\to0}\frac{\sin x}{x}',
+        r'\lim _{x\to0}\frac{\sin x}{x}',
 
         r"\begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix}^{-1}",  # 矩阵求逆
         r'\det \begin{pmatrix}1 & 2 \\ 3 & 4 \end{pmatrix}',

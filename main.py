@@ -529,7 +529,7 @@ class Input_box():
 
             # 数字
             if self.result[0][i] in ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']:
-                screen.blit(f_number[a].render(self.result[0][i], [True,False][a], (0, 0, 0), None), (show_xplace, show_yplace + a * 5 - 15))
+                screen.blit(f_number[a].render(self.result[0][i], True, (0, 0, 0), None), (show_xplace, show_yplace + a * 5 - 15))
                 '''
                 num = int(self.result[0][i])
                 if num == 0:
@@ -1571,7 +1571,6 @@ class Button():
             keyboard[5] = keyboardchange[self.choose][3] + keyboard[5][7:]
 
         elif button_txt != '':
-            I.adding = True
             # 其他表示字符
             if button_txt[0] == "\\":
                 I.character_input(button_txt)
@@ -1754,7 +1753,6 @@ class Button():
                 I.character_input(newtxt)
             elif place != [-1, -1]:
                 I.character_input(button_txt)
-            I.adding = False
 
     # 计算
     def calculate(self):

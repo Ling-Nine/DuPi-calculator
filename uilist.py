@@ -35,9 +35,13 @@ f = pygame.font.Font(r"C:\Windows\Fonts\simsun.ttc",20)
 f1 = pygame.font.Font(r"C:\Windows\Fonts\simsun.ttc",15)
 f2 = pygame.font.Font(r"C:\Windows\Fonts\simsun.ttc",10)
 f4 = pygame.font.Font(r"C:\Windows\Fonts\simsun.ttc",40)
-
+"""
+f = pygame.font.SysFont("simsun",20)
+f1 = pygame.font.SysFont("simsun",15)
+f2 = pygame.font.SysFont("simsun",10)
+f4 = pygame.font.SysFont("simsun",40)
 #fnemu = pygame.font.SysFont('simsunnsimsun',12)
-
+"""
 image_type = '.png'
 nums = pygame.image.load("./符号图片/度数"+image_type)
 nums = [pygame.transform.scale(nums, (240, 40)),pygame.transform.scale(nums, (120, 20))]
